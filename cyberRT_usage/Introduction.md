@@ -25,13 +25,25 @@ Apollo CyberRT具备以下优势：
 
 #### 命令行工具
 
-##### cyber_monitor
-
-cyber_monitor 用法
+##### cyber_monitor 用法
 
 ``` bash
 $ source setup.bash    
-$ cyber_monitor
+$ cyber_monitor --help
+Usage: cyber_monitor
+
 ```
 
-`cyber_monitor`会自动从拓扑中手机channel信息并分两列显示：`Channels（channel名称）`，`FrameRatio（数据频率）`
+`cyber_monitor`会自动从拓扑中收集channel信息并分两列显示：`Channels（channel名称）`，`FrameRatio（数据频率）`
+
+#### cyber_recorder 用法
+
+``` bash
+$ source setup.bash    
+$ cyber_recorder play -l [record]
+# this will play the record in loop
+```
+
+cyber_recorder 功能丰富
+
+#### cyber_channel 用法
